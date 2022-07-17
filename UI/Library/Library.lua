@@ -117,16 +117,19 @@ UI.Initiate = function(NewTitle)
         ImageButton.Image = "rbxassetid://89960960"
         ImageButton.Parent = Notification
         ImageButton.MouseButton1Down:Connect(function()
+            spawn(function()
+                game:GetService("TweenService"):Create(Notification, TweenInfo.new(.6, Enum.EasingStyle.Quad), {Size = UDim2.new(1, 0, 0, 0)}):Play()
+                wait(2)
+                Notification:Destroy()
+            end)
+        end)
+        spawn(function()
+            game:GetService("TweenService"):Create(Notification, TweenInfo.new(.6, Enum.EasingStyle.Quad), {Size = UDim2.new(1, 0, 0, 35)}):Play()
+            wait(Duration)
             game:GetService("TweenService"):Create(Notification, TweenInfo.new(.6, Enum.EasingStyle.Quad), {Size = UDim2.new(1, 0, 0, 0)}):Play()
             wait(2)
             Notification:Destroy()
         end)
-
-	    game:GetService("TweenService"):Create(Notification, TweenInfo.new(.6, Enum.EasingStyle.Quad), {Size = UDim2.new(1, 0, 0, 35)}):Play()
-	    wait(Duration)
-	    game:GetService("TweenService"):Create(Notification, TweenInfo.new(.6, Enum.EasingStyle.Quad), {Size = UDim2.new(1, 0, 0, 0)}):Play()
-        wait(2)
-        Notification:Destroy()
     end
 
 	local UICorner1 = Instance.new("UICorner")
