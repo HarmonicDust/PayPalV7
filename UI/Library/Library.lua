@@ -1,3 +1,9 @@
+--[[ Some of this stuff was directly skidded off haze (lol (sorry))
+    (Specifically the slider formula; also thank you vynixu for the keybinds and concept ideas)
+
+    but seriously, thank you so much haze for letting me steal your code without u knowing XD (sorry again lol(please don't be mad(im so sorry please don't cancel me on twitter :((()))
+]]
+
 local UI = {}
 
 local function dragify(Frame)
