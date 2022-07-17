@@ -1,3 +1,6 @@
+--[[ Some of this stuff was directly skidded off haze (lol (sorry))
+    (Specifically the slider formula; also thank you vynixu for the keybinds and concept ideas)
+]]
 local UI = {}
 
 local function dragify(Frame)
