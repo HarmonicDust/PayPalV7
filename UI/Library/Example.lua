@@ -1,6 +1,6 @@
--- This file will not be imported to paypal.
+-- This file is completely seperated from paypal, just a resource if you do want to use this library
 
-local Library = UI.Initiate("PayPal V7 - Library")
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/HarmonicDust/PayPalV7/main/UI/Library/Library.lua", true))().Initiate("PayPal V7 - Library")
 
 local CreatedTab = Library.CreateTab("Created Tab")
 
@@ -18,7 +18,7 @@ CreatedSection.CreateTextbox({Name = "Notification"}, function(Text)
     Library.Notification(Text, 7)
 end)
 
-CreatedSection.CreateKeybind("Toggle UI", {Bind = Enum.KeyCode.RightShift}, function()
+CreatedSection.CreateKeybind("Toggle UI", {Bind = Enum.KeyCode.Return}, function()
     Library.ToggleHide()
 end)
 
