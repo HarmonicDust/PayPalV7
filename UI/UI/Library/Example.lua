@@ -1,6 +1,6 @@
--- This file will not be imported to paypal.
+-- This file is a seperate file from paypal.
 
-local Library = UI.Initiate("PayPal V7 - Library")
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/HarmonicDust/PayPalV7/main/UI/UI/Library/Library.lua", true))().Initiate("PayPal V7 - Library")
 
 local CreatedTab = Library.CreateTab("Created Tab")
 
